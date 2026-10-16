@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: false;
+}
+
+
+@theme {
+  --font-livvic: "Livvic", sans-serif;
+
+  --color-coral: #f67e7e;
+  --color-rapture: #79c8c7;
+  --color-myrtle: #014e56;
+  --color-midnight: #004047;
+  --color-police: #2c6269;
+  --color-jungle: #012f34;
+  --color-deep: #002529;
+
+  --container-page: 1110px;
+}
+
+@layer base {
+  body {
+    @apply min-w-[1440px] bg-deep font-livvic text-white antialiased;
+  }
+}
